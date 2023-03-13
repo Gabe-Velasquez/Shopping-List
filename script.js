@@ -12,14 +12,22 @@ function createListElement(){
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value = "";
+
+    var button = document.createElement("button");
+    button.appendChild(document.createTextNode("Done!"));
+	li.appendChild(button);
+	button.onclick=underlineParent;
+
+    var button =document.createElement("button");
+    button.appendChild(document.createTextNode("Button"));
+    li.appendChild(button);
+    button.onclick=removeParent;
 }
 
-function removeListElement(){
-    var li = document.getElementById("li");
-    // li.appendChild(document.createTextNode(input.value));
-    ul.removeChild(li);
-    input.value = "";
+function removeParent(evt){
+    evt.target.parentNode.remove();
 }
+
 
 function addListAfterClick(){
     if (inputLength() > 0){
@@ -33,12 +41,7 @@ function  addListAfterKeypress(event){
     }
 }
 
-function removeListAfterClick(){
-    if(inputLength() > 0){
-        removeListElement();
-    }
-}
+
 
 button.addEventListener("click", addListAfterClick);
-button1.addEventListener("click", removeListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
