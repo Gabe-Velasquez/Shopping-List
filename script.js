@@ -3,6 +3,7 @@ var button1 = document.getElementById("remove");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
+//determines character length of input 
 function inputLength(){
     return input.value.length;
 }
@@ -29,6 +30,7 @@ function underlineParent(event){
     event.target.parentNode.classList.toggle("done");
 }
 
+//deletes child from list 
 function removeParent(evt){
     evt.target.parentNode.remove("delete");
 }
