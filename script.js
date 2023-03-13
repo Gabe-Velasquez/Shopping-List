@@ -40,5 +40,5 @@ function removeListAfterClick(){
 }
 
 button.addEventListener("click", addListAfterClick);
-button.addEventListener("click", removeListAfterClick);
+button1.addEventListener("click", removeListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
