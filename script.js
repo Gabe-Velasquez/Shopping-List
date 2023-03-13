@@ -5,7 +5,7 @@ var ul = document.querySelector("ul");
 button.addEventListener("click", function(){
     if (input.value.length > 0){
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode("input.value"));
+    li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value= "";
     }
@@ -14,7 +14,7 @@ button.addEventListener("click", function(){
 input.addEventListener("keypress", function(){
     if (input.value.length > 0 && event.keyCode===13 || event.code===enter || event.which === 13){
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode("input.value"));
+    li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value= "";
     }
