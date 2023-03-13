@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <title>Shopping List</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-    <body>
-        
-
-        <h1>Shopping List</h1>
-        <p id="first">Get these today!</p>
-        <input id="userinput" type="text" placeholder="Enter items">
-        <button id="enter">Enter</button>
-        <button id="clear" onclick="removeAll()">Delete List</button>
-        <ul id="list">
-            <li class=" " random="21">Notebook</li>
-            <li>Dog Bone</li>
-            <li>Milk</li>
-            <li>Chips</li>
-            <li>Bread</li>
-        </ul>
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+  <body>
+    <div class="contain">
+        <div class="box">
+            <h1>Shopping List</h1>
+            <p id="first">Get these today!</p>
+            <input id="userinput" type="text" placeholder="Enter items" />
+            <button id="enter">Enter</button>
+            <button id="clear" onclick="removeAll()">Delete List</button>
+            <ul id="list">
+                <li class=" " random="21">Notebook</li>
+                <li>Dog Bone</li>
+                <li>Milk</li>
+                <li>Chips</li>
+                <li>Bread</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

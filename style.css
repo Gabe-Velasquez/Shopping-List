@@ -1,3 +1,33 @@
+body{
+    text-align: center;
+    background-image: url("pexels-wallace-chuck-15491784.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color:aliceblue;
+    opacity: 0.95;
+    margin-top: 15%;
+    padding: 2%;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+    padding-top: 2%;
+}
+
 .coolTitle {
     text-align: center;
     font-family: 'Oswald', Helvetica, sans-serif;
@@ -21,3 +51,4 @@
   .done {
     text-decoration: line-through;
   }
+
