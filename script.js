@@ -19,7 +19,7 @@ function addListAfterClick(){
 }
 
 function  addListAfterKeypress(event){
-    if (inputLength() > 0 && event.keyCode===13 || event.code===enter || event.which === 13){
+    if (inputLength() > 0 && event.keyCode===13){
         createListElement();
     }
 }
