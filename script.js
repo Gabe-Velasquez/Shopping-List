@@ -7,6 +7,7 @@ function inputLength(){
     return input.value.length;
 }
 
+// Creates list item
 function createListElement(){
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(input.value));
@@ -23,6 +24,7 @@ function createListElement(){
     li.appendChild(button);
     button.onclick=removeParent;
 }
+// Adds cross through action when done is pressed 
 function underlineParent(event){
     event.target.parentNode.classList.toggle("done");
 }
@@ -31,16 +33,18 @@ function removeParent(evt){
     evt.target.parentNode.remove("delete");
 }
 
+//clears list 
 function removeAll(){
     document.getElementById("list").innerHTML = "";
 }
-
+//adds to list when button is clicked 
 function addListAfterClick(){
     if (inputLength() > 0){
         createListElement();
     }
 }
 
+//enter key also adds to list 
 function  addListAfterKeypress(event){
     if (inputLength() > 0 && event.keyCode===13){
         createListElement();
@@ -48,6 +52,6 @@ function  addListAfterKeypress(event){
 }
 
 
-
+//event listeners 
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
