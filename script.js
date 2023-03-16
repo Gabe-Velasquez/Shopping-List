@@ -25,6 +25,16 @@ function createListElement(){
     li.appendChild(button);
     button.onclick=removeParent;
 }
+
+//Function to check list for duplicates from a list
+if (ul.innerHTML.indexOf(userinput)>0){
+    alert("You already have this on your list!");
+} else {
+    li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+    input.value = "";
+}
+
 // Adds cross through action when done is pressed 
 function underlineParent(event){
     event.target.parentNode.classList.toggle("done");
