@@ -11,6 +11,14 @@ function inputLength(){
 // Creates list item
 function createListElement(){
     var li = document.createElement("li");
+    //checks for duplicate items in list
+    for (let i=0 < input.value.length; i++) {
+        if (input.value.length[i].value === input.value){
+            alert("This item is already on your list!")
+        }
+        return false;
+    }
+
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value = "";
@@ -26,14 +34,6 @@ function createListElement(){
     button.onclick=removeParent;
 }
 
-//Function to check list for duplicates from a list
-if (ul.innerHTML.indexOf(userinput)>0){
-    alert("You already have this on your list!");
-} else {
-    li.appendChild(document.createTextNode(input.value));
-    ul.appendChild(li);
-    input.value = "";
-}
 
 // Adds cross through action when done is pressed 
 function underlineParent(event){
